@@ -18,7 +18,16 @@ border: 2px solid #A9641F;
     margin: 0 auto;
     margin-bottom: 60px;
   }
-  
+  .logo{
+    width: 100%;
+  text-align:center;
+margin-top:10px;
+margin-right:20px;
+font-weight:bold;
+  line-height:1.5;
+ font-size: 80px;
+
+  }
   
   .logo-carousel .slick-prev,
   .logo-carousel .slick-next {
@@ -61,4 +70,8 @@ border: 2px solid #A9641F;
     max-height: 100px; /* Adjust the max-height as needed */
     margin: 0 auto; /* Center the logos horizontally */
   }
-  
+  @media (max-width: 768px) {
+  .logo-carousel p.logo {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+  }
+}

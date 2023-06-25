@@ -3,21 +3,18 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "./ContactUs.css";
-import image from '../../res/HomeImages/contact.png';
 import { IoMdMail } from 'react-icons/io';
 import { TiLocation } from "react-icons/ti";
-import { ImPhone } from "react-icons/im";
+import { LuSmartphone } from "react-icons/lu";
 
 
 const Contact_us = () => {
   const [formObject, setFormObject] = useState({
     name: "",
     email: "",
-    phone: "",
     message: "",
   });
-  const phoneRegExp =
-    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+ 
 
   const validation = yup.object().shape({
     name: yup.string().min(2).max(15).required("Please enter your name"),
@@ -25,11 +22,10 @@ const Contact_us = () => {
       .string()
       .required("Please enter your email")
       .email("Please enter a valid email"),
-    phone: yup.string().matches(phoneRegExp, "Phone number is not valid"),
     message: yup
       .string()
       .min(10 * 12)
-      .max(10 * 20),
+      .max(10 * 20).required("please enter your message"),
   });
 
   return (
@@ -45,17 +41,21 @@ const Contact_us = () => {
       >
         <Form>
           <div className="container">
-            <article> <h1>Get in touch</h1>
-            <hr className='line'></hr>
-            <p className="para">We are here for you! How can we help?</p></article>
+            <article> </article>
             <div className="row">
               <div className="col-md-6">
                 <div className="form-group">
+                  <h1>Get in touch</h1>
+                  <hr className="line"></hr>
                   <Field
                     type="text"
                     name="name"
                     placeholder="Enter your name"
-                    className="form-control"                 
+                    className="form-control"
+                    style={{
+                      height: "60px",
+                      backgroundColor: "rgb(241, 237, 237)",
+                    }}
                   />
                   <ErrorMessage
                     name="name"
@@ -69,7 +69,10 @@ const Contact_us = () => {
                     name="email"
                     placeholder="Enter your email address"
                     className="form-control"
-                  
+                    style={{
+                      height: "60px",
+                      backgroundColor: "rgb(241, 237, 237)",
+                    }}
                   />
                   <ErrorMessage
                     name="email"
@@ -77,20 +80,7 @@ const Contact_us = () => {
                     className="text-danger"
                   />
                 </div>
-                <div className="form-group">
-                  <Field
-                    type="text"
-                    name="phone"
-                    placeholder="Enter your phone number"
-                    className="form-control"
-      
-                  />
-                  <ErrorMessage
-                    name="phone"
-                    component="div"
-                    className="text-danger"
-                  />
-                </div>
+
                 <div className="form-group">
                   <Field
                     as="textarea"
@@ -98,9 +88,9 @@ const Contact_us = () => {
                     placeholder="Enter your message"
                     className="form-control"
                     style={{
-                      height: "100px", 
-                      border: "none", 
-                      backgroundColor: "rgb(241, 237, 237)", 
+                      height: "160px",
+                      border: "none",
+                      backgroundColor: "rgb(241, 237, 237)",
                     }}
                   />
                   <ErrorMessage
@@ -109,17 +99,24 @@ const Contact_us = () => {
                     className="text-danger"
                   />
                 </div>
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="button">
                   Submit
                 </button>
               </div>
-              <div className="col-md-6 img-container">
-                <img src={image} alt="Contact" className="img-fluid" />
-                <div className="image-text"><TiLocation className="icon1"/>
-                  Barrackpore, Kolkata,<br></br>West Bengal- 700 122
+              <div className="img-container">
+                <h2>OFFICE</h2>
+                <div className="image-text">
+                  <TiLocation className="icon1" />
+                  Chandigarh,India<br></br>
                 </div>
-                <div className="image-text"><ImPhone className="icon2"/>+91 7278817473</div>
-                <div className="image-text"><IoMdMail className="icon3"/>contact@clikintech.com</div>
+                <div className="image-text">
+                  <LuSmartphone className="icon2" />
+                  +91 8558880599
+                </div>
+                <div className="image-text">
+                  <IoMdMail className="icon3" />
+                  order@organzy.in
+                </div>
               </div>
             </div>
           </div>

@@ -1,129 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
-
-
-.our{
-    text-align: center;
-   margin-top: 30px !important;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 61px;
-    /* identical to box height */
-    
-    background-color: #FFFFFF !important;
-    color: #000000 !important;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.diva {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   background-image: url("https://organzy.in/wp-content/uploads/2021/10/STORE.jpg");
+  background-position: 50% -1163px;
+  height: 100vh;
 }
 
-.our1{
-    background-color: #FFFFFF;
-    margin-bottom: 30px;
+.div2a {
+  padding: 20px;
 }
 
-.line{
-    width: 144px !important;
-    background-color: #FFFFFF !important;
-    border: 2px solid #A9641F !important; 
+.divca {
+  text-align: center;
 }
 
-.our2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.titlea img {
+  max-width: 100%;
+
 }
 
-.logos{
-    width: 150px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.texta {
+  font-size: 100px;
+  margin: 20px 0;
+  font-weight: bold;
 }
 
-#card1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: white;
-    border-radius: 15px;
-    color: #050921;
-    margin-right: 55px;
-    padding: 5px;
-    border: 0px;
-    height: 500px;
+.btn {
+  margin-top: 20px;
 }
 
-#card-heading{
+.custom-button {
+  padding: 10px 20px;
+  background-color: #f19233;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 36px;
+  cursor: pointer;
+}
+.custom-button :hover{
+  background-color: beige;
+  color:black;
+  
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .diva {
+    justify-content: flex-start;
+  }
+
+  .div2a {
+    padding: 10px;
+  }
+
+  .titlea img {
    
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 29px;
-color: #050921;
-
+  }
 }
 
-#card-para{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #050921;
-}
+@media (max-width: 768px) {
+  .divca {
+    padding: 10px;
+  }
 
-#card2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: white;
-border-radius: 15px;
-    color: #050921;
-    padding: 5px;
-    border: 0px;
-    height: 500px;
-}
+  .titlea {
+    font-size: 18px;
+  }
 
-.bookdemo{
-    margin-top: 80px;
-    border: none;
-    background-color: #070944;
-    width: 193px;
-height: 64px;
+  .texta {
+    font-size: 14px;
+  }
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-
-color: #FFFFFF;
-border-radius: 15px;
-}
-
-.book-demo-butn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-
-}
-
-@media only screen and (min-width: 300px) and (max-width: 550px){
-    #card1{
-         margin-right: 0px;
-    }
-    #card2{
-    margin-right: 0px;
-    }
+  .custom-button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
 }

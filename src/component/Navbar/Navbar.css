@@ -2,7 +2,7 @@
 
 
 .navbar{
-    background-color: #050921 ;
+    background-color: #1a1a1b ;
     color: #FFFFFF;
 }
 
@@ -10,17 +10,21 @@
     margin-left: 72px ;
 }
 .navbarimage{
-    height: 40px;
+    height: 100px;
 }
 
 .nav-link{
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 25px;
     line-height: 24px;
     margin-left: 52px;
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: rgb(226, 158, 56) !important;
+}
+.nav-link:hover{
+background-color: #ece0e0;
+  color: #fff;
 }
 
 .navbar-btn{
@@ -28,7 +32,7 @@
 height: 64px;
 left: 1175px;
 top: 108px;
-background-color: #050921 ;
+background-color: #1a1a1b ;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -48,7 +52,7 @@ margin-right: 72px;
 height: 40px;
 left: 1175px;
 top: 108px;
-background-color: #050921 ;
+background-color:  #1a1a1b ;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -74,7 +78,7 @@ margin-right: 10px;
 }
 
 .menu{
-    color: #050921;
+    color: #1a1a1b;
 }
 
 /* @media only screen and (max-width: 1280px){

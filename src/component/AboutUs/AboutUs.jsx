@@ -1,71 +1,114 @@
 import React from 'react'
 import './AboutUs.css'
-import image from '../../res/AboutUsImages/Image1.png'
-import image2 from '../../res/AboutUsImages/Image2.png'
-import image3 from '../../res/AboutUsImages/Image3.png'
-import image4 from '../../res/AboutUsImages/Image4.png'
-import { useHistory } from "react-router-dom";
+
+import color from '../../res/AboutUsImages/color.jpg'
+import girl from '../../res/AboutUsImages/girl.jpeg'
 
 function AboutUs() {
-  const history = useHistory();
   
-    const navigate = () => {
-        history.push("/ContactUs")
-    }
   return (
     <>
-    <div class="div-ab">
-    <div className='div3-ab'></div>
-      <div class="div2-ab">
-         <p class="heading-ab">About Us</p>
-         <br></br>
-         <p class="text-ab">Clikin Tech is a Digital Marketing Agency 
-         that help businesses grow while establishing credibility with clients.
-         </p>
-         <a href="/ContactUs">
-         <button class="btn1-ab" onClick={navigate}><p class="btext-ab">Get Started</p></button>
-         </a>
+      <div class="div-ab">
+        <div className="div3-ab"></div>
+        <div class="div2-ab">
+          <h2>ABOUT ME & MY BRAND</h2>
+        </div>
       </div>
-      <img src={image} alt="imagehere" class="imag-ab"/>   
-    </div>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <div className='div4-ab'>
-      <p class="heading1-ab">Our Story
-      <hr className='hr-ab'></hr>
-      </p>
-         <br></br>
-         <p class="text1-ab">Marketing strategies have been 
-         around for a long time, serving as a means for businesses to promote their products and services. Initially, we relied heavily on traditional marketing methods. But as technology advances, so do our marketing solutions and techniques. For companies looking to build a robust online presence, digital marketing is the perfect ingredient for success. With the widespread use of social media and other online platforms, digital strategies have gained significant momentum. 
-         Clikin Tech is a newly established agency providing businesses with impactful digital marketing solutions. Our primary objective is to enhance your website traffic, increase sales, and boost your income. With a focus on maximizing the effectiveness of your digital marketing campaigns, we will collaborate closely with you, considering your budget and target audience, to effectively communicate your message. By staying up-to-date with the latest advancements in digital marketing, we will create successful local campaigns tailored to meet your specific goals.
-         </p>
-      <img src={image2} alt="imagehere" class="imag2-ab"/>      
-    </div>
-    <br></br>
-    <div className='div5-ab'>
-      <p class="heading2-ab">Our Mission
-      <hr className='hr2-ab'></hr>
-      </p>
-         <br></br>
-         <p class="text2-ab">Our mission is to be the trusted partner for businesses seeking powerful digital marketing solutions. With our unrivaled creativity and expertise in digital marketing, we are dedicated to transforming our client's dreams into reality. By leveraging cutting-edge digital strategies, and harnessing the power of a data-driven approach, we strive to deliver exceptional results.
-          We are driven by a relentless pursuit of success and outcomes that surpass expectations. As a cohesive team, we foster an environment of support, inspiration, and continuous growth, valuing individuality and our unwavering commitment to every project as if they were our own.
-         </p>
-      <img src={image3} alt="imagehere" class="imag3-ab"/>      
-    </div> 
-    <div className='div6-ab'>
-      <p class="heading3-ab">Our Vision
-      <hr className='hr3-ab'></hr>
-      </p>
-         <br></br>
-         <p class="text3-ab">We aspire to be recognized as the best, not only in the results we achieve but also in the integrity with which we operate. We want to set the standard for excellence in the digital world. We are dedicated to producing exceptional results that exceed expectations and staying true to what we advertise. Our goal is to establish a reputation for reliability, ensuring that our clients can trust us.
-         </p>
-      <img src={image4} alt="imagehere" class="imag4-ab"/>      
-    </div>      
+      <div className="div4-ab">
+        <div className="text1-ab">
+          <h1>HUMBLE BEGINNINGS</h1>
+          <p>
+            Organzy was started in 2020 with a simple question – “Can great
+            handmade skincare products be created and sold for a fair price?”.
+            Over the years we noticed the cost of handmade soaps started to sore
+            while the size of the soaps was starting to shrink. We began our
+            journey to answer this question.
+          </p>
+          <h1>OUR BIG MISSION</h1>
+          <p>
+            Organzy was started in 2020 with a simple question – “Can great
+            handmade skincare products be created and sold for a fair price?”.
+            Over the years we noticed the cost of handmade soaps started to sore
+            while the size of the soaps was starting to shrink. We began our
+            journey to answer this question.
+          </p>
+        </div>
+        <br></br>
+
+        <img src={color} alt="imagehere" class="imag2-ab" />
+      </div>
+      <br></br>
+      <div className="div5-ab">
+        <br></br>
+        <p class="text2-ab">
+          Since our products are handmade, we know exactly what goes into each
+          one. Each ingredient is carefully selected and used to deliver the
+          finest possible results. We go to great lengths to make certain that
+          our materials, processing and packaging are as kind to the environment
+          as they are to your skin.
+          <br />
+          <br />
+          All of us at Organzy are well aware that you have many choices when
+          purchasing your skincare products. We have a clear focus on providing
+          you with world class customer care, consistency in the soap making
+          process, packaging, and delivery.
+          <br />
+          <br />
+          Most of our products are considered “natural” as they don’t contain
+          any harsh chemicals. It is also worthy to note that we source all of
+          our raw materials from cruelty-free suppliers
+        </p>
+        <h1>HANDMADE? YOU BET!! </h1>
+        <p class="text2-ab">
+          We control and govern the entire process of making our products from
+          start to finish. Therefore, ensuring quality and safety.
+          <br />
+          <br />
+          All of the products made by Organzy are handmade by our own hands
+          using the “melt and pour” method of making soap.
+          <br />
+          <br />
+          Organzy is a handcrafted artisan skincare company specializing in
+          making every product one batch at a time. No two batches are
+          absolutely alike or identical, encouraging us to believe that of our
+          all our products as works of art!
+        </p>
+        <h1>OUR BRAND CULTURE</h1>
+        <p class="text2-ab">
+          Our brand culture grasps strong roots and a game-changing vision. It
+          stems from an array of impacts and values:
+          <br />
+          <br />
+          <br />
+          <ul>
+            <li>
+              – Our hunt for natural and organic skincare that is gentle on skin
+              & doesn’t cost the earth (literally).
+            </li>
+            <li>– Our passion for transparency.</li>
+            <li>– Our vision to create an honest and clean brand.</li>
+            <li>
+              – Our dedication and commitment to establishing sustainable
+              practices.
+            </li>
+            <li>– Our relationship with our people. WE ARE FAMILY.</li>
+          </ul>
+        </p>
+        <h1>FINAL WORD </h1>
+        <p class="text2-ab">
+          Like proud parents, we’d love nothing more than for our lovely
+          products to take pride of place in your home.Countless hours have gone
+          into making our products as gorgeous on the inside as they are on the
+          outside. We hope you love using them as much as we loved creating
+          them.
+        </p>
+        <img src={girl} alt="imagehere" className="imag3-ab" />
+      </div>
+      <div className="div6-ab">
+        <br></br>
+      </div>
     </>
-  )
+  );
 }
 
-export default AboutUs
+export default AboutUs;

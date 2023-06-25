@@ -5,8 +5,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
-   background: #050921;
+  padding: 150px;
+ background-image: url("https://organzy.in/wp-content/uploads/2021/10/Contact-Us-Banner-1.jpg"); 
+ background-position: 50% 0px;
    color: white;
 }
 
@@ -39,7 +40,7 @@
   .custom-container {
     flex-direction: column;
     align-items: center;
-   background: #050921;
+   background-image: url("https://organzy.in/wp-content/uploads/2021/10/Contact-Us-Banner-1.jpg"); 
   }
 
   .text1 {

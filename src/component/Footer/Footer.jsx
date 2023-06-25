@@ -1,87 +1,101 @@
-import React from 'react';
-import './Footer.css';
-import logo from '../../res/logo.png';
-import { IconContext } from 'react-icons';
-import { FaFacebook, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
+import React from "react";
+import "./Footer.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+import organzy from "../../res/HomeImages/organzy.png";
+import { LuSmartphone } from "react-icons/lu";
+import { MdEmail, MdLocationPin } from "react-icons/md";
 
 function Footer() {
-  const openFacebook = () => {
-    window.open('https://www.facebook.com', '_blank');
-  };
-  const openInstagram = () => {
-    window.open('https://www.instagram.com', '_blank');
-  };
-  const opentwitter = () => {
-    window.open('https://www.twitter.com', '_blank');
-  };
-  const opengithub = () => {
-    window.open('https://www.github.com', '_blank');
-  };
   return (
-    <div className='div-footer'>
+    <div className="div-footer">
       <footer className="footer">
-        <div className="container ff">
-          <div className="row ">
-            <div className="col-md-2">
-              <img src={logo} alt="Logo" className="footer-logo mb-4" />
-              <h5 className="footer-title">We are a digital<br></br> marketing agency</h5>
-              <IconContext.Provider value={{ className: 'top-react-icons' }}>
-              <span className="top-react-icons1" onClick={openInstagram}>
-                <FaInstagram />
-              </span>
-              <span className="top-react-icons2" onClick={openFacebook}>
-                <FaFacebook />
-              </span>
-              <span className="top-react-icons3" onClick={opentwitter}>
-                <FaTwitter />
-              </span>
-              <span className="top-react-icons4" onClick={opengithub}>
-                <FaGithub />
-              </span>
-            </IconContext.Provider>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4 col-sm-12">
+              <img
+                src={organzy}
+                className="navbarimages"
+                alt=""
+                height="200px"
+                width="200px"
+              />
 
+              <h5 className="footer-title">
+                Organzy was started in 2020 with a simple question – “Can great
+                handmade skincare products be created and sold for a fair
+                price?” <span>.Read more</span>
+              </h5>
             </div>
-            <div className="col-md-3">
-              
+            <div className="col-md-2 col-sm-5">
+              <h5>
+                <strong>PRODUCT</strong>
+              </h5>
               <ul className="list-unstyled">
-                <li><h5><strong>Services</strong></h5></li>
-                <li><a href="/Services">Digital marketing</a></li>
-                <li><a href="/Services">Web development</a></li>
-                <li><a href="/Services">Mobile App Development</a></li>
+                <li>
+                  <a href="/">Bath Salt</a>
+                </li>
+                <li>
+                  <a href="/">Soap Bars</a>
+                </li>
+                <li>
+                  <a href="/">Body Butters</a>
+                </li>
               </ul>
             </div>
-            <div className="col-md-2">
-              
+            <div className="col-md-3 col-sm-5">
+              <h5>
+                <strong>FOLLOW US</strong>
+              </h5>
               <ul className="list-unstyled">
-                <li><h5><strong>Home</strong></h5></li>
-                <li><a href="/Career">Career</a></li>
-                <li><a href="/AboutUs">About</a></li>
-                <li><a href="/Services">Services</a></li>
-                <li><a href="/ContactUs">Contact Us</a></li>
+                <li>
+                  <a href="https://www.instagram.com/organzyandco/">
+                    <FaInstagram />
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/people/Organzy/100076777936786/">
+                    <FaFacebook />
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/feed/">
+                    <FaLinkedin />
+                    Linkedin
+                  </a>
+                </li>
               </ul>
             </div>
-            <div className="col-md-3">
-              
+            <div className="col-md-3 col-sm-12">
+              <h5>
+                <strong>CONTACT</strong>
+              </h5>
               <ul className="list-unstyled">
-                <li><h5><strong>Resources</strong></h5></li>
-                <li><a href="/">Support</a></li>
-                <li><a href="/">Privacy Policy</a></li>
-                <li><a href="/">Terms & Conditions</a></li>
-              </ul>
-            </div>
-            <div className="col-md-2">
-              
-              <ul className="list-unstyled">
-                <li><h5><strong>Contact</strong></h5></li>
-                <li>Barrackpore</li>
-                <li>Kolkata- 122</li>
-                <li>West Bengal</li>
+                <li className="icons">
+                  <MdLocationPin />
+                  Chandigarh, India
+                </li>
+                <li className="icons">
+                  <LuSmartphone />
+                  +918558880599
+                </li>
+                <li className="icons">
+                  <MdEmail />
+                  order@organzy.in
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </footer>
-      <p className="text-center text-dark bg-light py-4 mb-0">Copyright 2023, All Rights Reserved by Clikin Tech</p>
+      <p className="text-center text-light bg-dark py-4 mb-0">
+        Copyright 2020 Organzy, All Right Reserved | Developed By{" "}
+        <a href="https://www.antraajaal.com/">
+          <span className="text-warning">Antraajaal</span>
+        </a>
+      </p>
     </div>
   );
 }
